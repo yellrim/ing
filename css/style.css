@@ -1,33 +1,7 @@
+@charset 'utf-8';
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-.intro .container{
-    height: 100vh;
-    background: #f8dede;
-    position: relative;
-}
-.intro .container >.me{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}
-.intro .container:hover >.me{
-    animation-name: me;
-    animation-duration: 4s;
-    animation-iteration-count:inherit;
-}
-/* @-webkit-keyframes me{
-    
-} */
-
-
-.wrap{
-    display: none;
-}
 :root{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;

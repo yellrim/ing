@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+}
+
+.banner::before{
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/intro.jpg);
+    animation: animate 50s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 3600px;
+    }
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+a{
+    position: relative;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #f8bcc2;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    transition: 0.5s;
+    overflow: hidden;
+}
+a:hover{
+    background-color: #de6969;
+}
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#fff,transparent);
+    transition: 0.8s;
+}
+a:hover::before{
+    left: 100%;
+}
